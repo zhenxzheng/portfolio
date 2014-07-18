@@ -1,0 +1,279 @@
+a:link{
+	text-decoration:none;
+	color:inherit;
+}
+a:visited{
+	text-decoration:none;
+	color:inherit;
+}
+a:hover{
+	color:white;
+}
+
+.clean{
+	clear:both;
+	width:0;
+	height:50px;
+
+}
+a:hover #Projects{
+	background: #3498db;
+}
+/*
+*	Size & Position
+*/
+
+/* Global */ 
+html,body{
+	width:100%;
+	height:100%;
+	background: url(../images/bg_white.png);
+}
+body{
+	height:130px;
+}
+
+/* Header & Navigation */
+#mainTitle, #nav h4{
+	text-align: center;
+}
+
+#mainTitle{
+	background: #84b4b1;
+	padding: 100px 0 120px 0;
+}
+#nav{
+	margin: auto;
+	padding-top: 50px;
+	width:100%;
+	max-width:640px;
+	display:block;
+}
+
+#Resume,#Projects,#About{
+	width:22.916666666%;
+	min-width:150px;
+	padding:1%;
+	margin:0 3%;
+	display:block;
+	float:left;
+}
+#resumeSVG,#projectsSVG,#aboutSVG{
+	max-width:100%;
+	max-height:100%;
+}
+#content{
+	position:relative;
+	width:100%;
+	max-width:940px;
+	margin:auto;
+	display:block;
+}
+
+#content header{
+	float:left;
+	width:64%;
+}
+
+#content h1,h2{
+	font-family: 'Open Sans',sans-serif;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color: #494949;
+}
+#content h1{
+	font-size: 36px;
+	font-weight:700;
+}
+#content h2{
+	font-size: 24px;
+	font-weight:700;
+}
+#content p{
+	padding:20px 0;
+	line-height: 20px;
+}
+#content aside{
+	width:33%;
+	min-width:310px;
+}
+#project figure,aside{
+	float:left;
+}
+aside a:link{
+	font-weight:700;
+}
+aside a:hover{
+	background:#494949;
+}
+aside h5{
+	font-size: 24px;
+	font-weight:700;
+}
+i{
+	font-style:italic;
+}
+b{
+	font-weight:700;
+}
+/* Projects */
+.projectLogos{
+	width:20%;
+	min-width:150px;
+	height:150px;
+	float:left;
+	padding:2% 1%;
+	margin: 0 1%;
+	margin-bottom:20px;
+	background:#005247;
+	overflow:hidden;
+}
+.projectLogos img{
+	width:100%;
+}
+
+#project aside{
+	margin: 20px 0 20px 3%;
+}
+#project figure{
+	width:64%;
+	min-width:320px;
+	margin: 20px 0;
+}
+#projectLogo{
+	max-width:150px;
+	float: right;
+}
+
+/* About */
+#photo,#bio,#instagram{
+	float:left;
+}
+#photo{
+	width:49%;
+	min-width:320px;
+}
+#bio{
+	width:49%;
+	min-width:320px;
+	margin:0 0 0 2%;
+}
+#photo img{
+	width:400px;
+	height:100%;
+}
+#bio header{
+	font-size:3em;
+	text-transform:uppercase;
+	font-weight: 200;
+	font-family: 'Montserrat',sans-serif;
+	display:block;
+}
+#social{
+	width:100%;
+}
+#Pookie, #Penelope{
+	min-width: 150px;
+	width:21.3%;
+	float:left;
+}
+#instagram a:link{
+	font-weight:700;
+}
+#instagram a:hover{
+	background:#494949;
+}
+#instagram{
+	min-width:320px;
+	padding-left:61px;
+	margin:auto 0 0 2%;
+	font-size:40px;
+	line-height:200px;
+
+}
+
+/*
+	Text
+*/
+body{
+	font-family:"Lato", sans-serif;
+}
+#mainTitle, #x{
+	color:white;
+	text-transform:uppercase;
+	font-size:65px;
+	font-weight:900;
+	font-family:"Montserrat", sans-serif;
+	letter-spacing:-6px;
+}
+header h1 span{
+	font-size:22px;
+	letter-spacing: 6px;
+}
+#x{
+	color:#737373;
+}
+#nav h4{
+	background:white;
+	color: #494949;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+
+/*
+*	SVG style
+*/
+
+/*RESUME SVG*/
+#Resume{
+	background: #91d0b1;
+}
+#resumeBG{
+	fill: #494949;
+}
+.resumeLine{
+	fill: #bfbfbf;
+	height:7;
+}
+
+/*PROJECT SVG*/
+#Projects{
+	background: #3498db;
+}
+#hammer{
+	fill:#494949;
+}
+#ranch{
+	fill:#494949;
+}
+
+/*ABOUT SVG*/
+#About{
+	background: #01b169;
+}
+#avatar{
+	fill:#494949;
+}
+
+
+#shortcutLeft,#shortcutRight,#shortcutX{
+	width:100px;
+	height:100px;
+	position:fixed;
+	opacity:0.4;
+}
+#shortcutLeft{
+	left:5%;
+	bottom:50px;
+}
+#shortcutRight{
+
+	right:5%;
+	bottom:50px;
+}
+#shortcutX{
+	top:50px;
+	right:5%;
+	z-index:-1;
+}

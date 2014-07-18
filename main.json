@@ -1,0 +1,17 @@
+{
+	"Resume":
+	{
+		"title": "Resume",
+		"link": "images/Resume/ZhenZheng-UXResume-2014-07-05-v2.pdf"
+	},
+	"Projects":
+	{
+		"title": "Projects",
+		"link": "/projects"
+	},
+	"About":
+	{
+		"title": "About",
+		"link": "/about"
+	}
+}

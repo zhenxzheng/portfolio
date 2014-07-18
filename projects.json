@@ -1,0 +1,292 @@
+[
+	{
+		"id": 1,
+		"title": "Activity Viz",
+		"date": "April - June 2014",
+		"summary": "Developed a data visualization that allows gesture researchers to upload Xbox Kinect raw data (.csv file). Generated manipulative 3D visualiation by using x3dom and D3.js.<p><b>Target:</b> Gesture Researchers who use Kinect</p>",
+		"logo": "ActivityViz/ActivityViz-Logo.png",
+		"images":
+		[
+			{
+				"type":"Project Images",
+				"img":
+				[
+					{
+						"path":"ActivityViz/FinalSlide.png",
+						"text":"<h5>Final Presentation</h5><p>If you wish to learn more about this project, here is our <a href=\"images/ActivityViz/ActivityViz-ProjectPaper.pdf\" target=\"_blank\">Final Report Paper</a>.</p><p><a href=\"http://activiz.herokuapp.com/\" target=\"_blank\">Live Demo</a><br><i>Note:*******<br>username: zhenxzheng<br>pw: 123456789<br>Or you can create your own account.<br>After login, skip the upload function by clicking \"Visulization\" on the nav bar to see the graph demo.</i></p>"
+					},
+					{
+						"path":"ActivityViz/COGS121Slide3.png",
+						"text":"<h5>Weekly Update</h5><p>Main points:</p><ul><li>3D Visualization</li><li>Graph Manipulation</li></ul><p>Main issue:</p><ul><li>Unknown gap between Kinect data and graph</li><li>Possibly because of the huge amount of data points are stored in a variable</li></ul>"
+					},
+					{
+						"path":"ActivityViz/COGS121Slide2.png",
+						"text":"<h5>Weekly Update</h5><p>Main points:</p><ul><li>Kinect data sample obtained</li><li>Upload feature finished</li><li>User account creation finished</li></ul>"
+					},
+					{
+						"path":"ActivityViz/COGS121Slide1.png",
+						"text":"<h5>Weekly Update</h5><p>Main points:</p><ul><li>Idea redefined</li><li>Graph Manipulation</li></ul><p>Main issue:</p><ul><li>Confidentiality issues</li><li>This leads to limited working data</li></ul>"
+					},
+					{
+						"path":"ActivityViz/Idea3.png",
+						"text":"<h5>Infrastructure Diagram</h5><p>Initially we were hoping to use YouTube API as part of the tools for movement visualization, however, due to confidentiality issue and limited data, we were forced to focus strictly on data visualization.</p><p>Then, we are planning to use D3.js library to create 2-dimensional graphics, and x3dom to generate a 3D environemnt for these graphics.</p><p>Here is our initial <a href=\"images/ActivityViz/ActivityViz-InitialTechnicalDesignDoc.pdf\" target=\"_blank\">Technical Design Document</a>.</p>"
+					},
+					{
+						"path":"ActivityViz/lowprototype.png",
+						"text":"<h5>Initial Wireframe Prototype</h5>"
+					},
+					{
+						"path":"ActivityViz/InitialPrototype.png",
+						"text":"<h5>A More Defined Wireframe Prototype</h5><p>This was created before we found out that we have restricted data sample.</p>"
+					},
+					{
+						"path":"ActivityViz/Sample.png",
+						"text":"<h5>Sample - mid-stage</h5><p>Featuring:</p><ul><li>Upload function</li><li>Success upload preview + data extraction</li><li>3D graph visualization</li></ul>"
+					},
+					{
+						"path":"ActivityViz/3D-frontalview.png",
+						"text":"<h5>3D-Graph Frontal View</h5>"
+					},
+					{
+						"path":"ActivityViz/3D-sideview.png",
+						"text":"<h5>3D-Graph Side View</h5>"
+					}
+				]
+			},
+			{
+				"type":"Logos & Icons Design",
+				"img":
+				{
+					"path":
+					[
+						"ActivityViz/logo-blue2.png",
+						"ActivityViz/logo-blue.png",
+						"ActivityViz/logo.png",
+						"ActivityViz/note-green.png",
+						"ActivityViz/note-teal.png",
+						"ActivityViz/web-blue.png",
+						"ActivityViz/web-teal.png",
+						"ActivityViz/D3.png",
+						"ActivityViz/import.png",
+						"ActivityViz/box.png",
+						"ActivityViz/progress.png",
+						"ActivityViz/email.png",
+						"ActivityViz/file.png",
+						"ActivityViz/social.png",
+						"ActivityViz/question.png",
+						"ActivityViz/database.png",
+						"ActivityViz/x.png",
+						"ActivityViz/idea.png",
+						"ActivityViz/graph.png",
+						"ActivityViz/warning.png"
+					],
+					"text":"<h5>Concept: Flat Design</h5>"
+				}
+			}
+		],
+		"documents":
+		[
+			"ActivityViz/ActivityViz-InitialTechnicalDesignDoc.pdf",
+			"ActivityViz/ActivityViz-ProjectPaper.pdf"
+		]
+	},
+	{
+		"id": 2,
+		"title": "UCSDMap",
+		"date": "January - March 2014",
+		"summary": "Redesigned the UCSD directory system. Developed a mobile map application using Google Map API with the integration of customized UCSD directory information and GPS function.<p><b>Target:</b> UCSD students, Staffs, & any one who needs to go to UCSD campus</p>",
+		"logo": "UCSDMap/triton.png",
+		"images":
+		[
+			{
+				"type":"Project Images",
+				"img":
+				[
+					
+					{
+						"path":"UCSDMap/Slide2.jpg",
+						"text":"<h5>UCSDMap</h5><p>Main Tools:</p><ul><li>Google Map API</li><li>Customized UCSD directory information<br>[in JSON format]</li><li>Bootstrap</li></ul><p>Main Functions:</p><ul><li>Search by building name, code & number</li><li>Auto-Complete suggestion</li><li>Global Position System</li></ul><p><a href=\"http://mapucsd2.herokuapp.com/\" target=\"_blank\">Live Demo</a><br><i>Note:<br>***YOU MUST ALLOW APPLICATION TO USE YOUR GPS ON YOUR BROWSWER.<br>Application was designed for mobiles, so layout format may look different on a desktop browswer (but it still works).</i></p>"
+					},
+					{
+						"path":"UCSDMap/Slide3.jpg",
+						"text":"<h5>Design Decisions:</h5><p>Search: because of the particularity of building names, abbreviations (or codes) & numbers, these information is not always readily available on our mobile map application. Therefore, searching by building name, code, & number is a need for our target users</p><p>Auto-complete: the auto-complete function is to prevent users from entering incorrect information and to reduce user's performance time. With the list of suggestion, it eases users memory and excessive typing.</p><p>GPS: it is always nice to know where you are and how far you are away from your destination.</p><p>Instruction: help instruction on main page will speed up performance of new users, making it less confusing.</p>"
+					}
+				]
+			},
+			{
+				"type":"Icon",
+				"img":
+				{
+					"path":
+					[
+						"UCSDMap/triton.png"
+					],
+					"text":"<h5>Responsive Design</h5><p>Application works in both portrait and landscape mode.</p>"
+				}
+			}
+		],
+		"documents":
+		[
+			"UCSDMap/Heuristic_Eval.pdf"
+		]
+	},
+	{
+		"id": 3,
+		"title": "Park&Go",
+		"date": "July - August 2013",
+		"summary": "Modified the UCSD parking payment system to improve user parking experience/efficiency by devloping a mobile/web appliation that supports remote paying and space counting. [Front-End only].<p><b>Target:</b> UCSD students, Staffs, & any one who needs to park in UCSD</p>",
+		"logo": "ParknGo/PnG-Logo.png",
+		"images":
+		[
+			{
+				"type":"Project Images",
+				"img":
+				[
+					{
+						"path":"ParknGo/PaperPrototypeMain.jpg",
+						"text":	"<h5>Paper Prototype [Web]</h5><p>Main page:</P><ul><li>List view: parking lot name, image, space type & availability.</li><li>Map view: marker pins where parking lot is.</li><li>Notification: announcements regarding special events that affect parking experience and parking lot status.</li></ul>"
+					},
+					{
+						"path":"ParknGo/PaperPrototypeMainRegister.jpg",
+						"text":"<p>New user registration</p>"
+					},
+					{
+						"path":"ParknGo/PaperPrototypeMainSignIn.jpg",
+						"text":"<p>Existing user login</p>"
+					},
+					{
+						"path":"ParknGo/PaperPrototypeParkingLot.jpg",
+						"text":"<p>Parking lot details:</p><ul><li>Graph regarding parking lot availability throughout the day</li><li>Current parking lot availability</li><li>Parking rates</li></ul>"
+					},
+					{
+						"path":"ParknGo/ParknGo-Main.jpg",
+						"text":"<h5>High Fidelity Prototype - Version A</h5><p>HTML + Bootstrap</p><p>Main page</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-Main-Register.jpg",
+						"text":"<h5>Version A</h5><p>Register</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-Main-SignIn.jpg",
+						"text":"<h5>Version A</h5><p>Login</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-ParkingLotInfo.jpg",
+						"text":"<h5>Version A</h5><p>Parking Lot Information</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-versionA-Purchase.jpg",
+						"text":"<h5>Version A</h5><p>Purchase</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-Main-v2.jpg",
+						"text":"<h5>High Fidelity Prototype - Version B</h5><p>Main page</p><p>The only differences between the two versions are the colors and the body background because some testers found the map background a bit much/noisy.</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-Main-SignIn-v2.jpg",
+						"text":"<h5>Version B</h5><p>Login</p>"
+					},
+					{
+						"path":"ParknGo/ParknGo-ParkingLotInfo-v2.jpg",
+						"text":"<h5>Version B</h5>"
+					},
+					{
+						"path":"ParknGo/Storyboard-1.jpg",
+						"text":"<h5>Storyboard 1</h5><p>These storyboards are based on a mobile application idea that emphasizing the existing user issues and the benefits that the application can bring.<br><i>(See below for future expanding ideas on a mobile application)</i></p><p>Skip the payment line and the need to deal with slow machine.</p>"
+					},
+					{
+						"path":"ParknGo/Storyboard-2.jpg",
+						"text":"<h5>Storyboard 2</h5><p>Avoid having to go back and forth to buy extra time.</p>"
+					},
+					{
+						"path":"ParknGo/Storyboard-3.jpg",
+						"text":"<h5>Storyboard 3</h5><p>Pay for your car whenever, wherever.</p>"
+					},
+					{
+						"path":"ParknGo/MobileDesignIdea.jpg",
+						"text":"<h5>Expansion Idea 1</h5><p><ul><li>Associate a particular car with an unique QR code</li><li>Scan and store information under your account</li><li>Make payment via the application on a chosen car</li><li>Metermaid scans car QR code to check car parking permit status</li><li>Authority personels scans QR code to alert user via application if necessary</li></ul></p><h5>Expansion Idea 2</h5><p><ul><li>Number each parking space (Treat the parking lot as an array)</li><li>Park and specify which parking lot and parking space to pay for</li><li>The inputted parking lot location will pull up the rate of that parking lot</li><li>The inputted space number allows the system to generate a parking lot map to dynamically display the availability of each individual parking space.</li><li>Metermaids will use that map to check which car should not be in the parking lot/expired permit</li></ul></p><h5>Expansion Idea 3</h5><p>Same as idea 2 but instead of paying for a set rate, treat the space as a hotel room. Pay when you leave. This allows users to pay for their entire staying. No more overpay or underpay. <i>HOWEVER, this requires users to check out of the space to stop the timer/payment, which people may forget.</i></p>"
+					},
+					{
+						"path":"ParknGo/OtherIdeas.png",
+						"text":"<p>Cal State Fullerton has a successful parking space counting system.</p><p><a href=\"https://parking.fullerton.edu/parkinglotcounts/mobile.aspx\" target=\"_blank\">View Live</a></p>"
+					}
+				]
+			},
+			{
+				"type":"Logo and Icon Design",
+				"img":
+				{
+					"path":
+					[
+						"ParknGo/Logo-Timenado.png",
+						"ParknGo/Logo.png",
+						"ParknGo/PnG-Logo.png",
+						"ParknGo/PnG-Logo-Icon.png",
+						"ParknGo/CarIcon.png",
+						"ParknGo/GraphIcon.png",
+						"ParknGo/MapIcon.png",
+						"ParknGo/InfoIcon.png",
+						"ParknGo/Notification.png",
+						"ParknGo/RateIcon.png"
+					],
+					"text":"<p>Team name and logo design are inpired by our theme for <b>time</b>.</p><p>Application logo design is inpired by our application name <b>Park&Go</b> and its environment, <b>a parking lot</b>.<br>:)</p>"
+				}
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "Social Fitness",
+		"date": "April - June 2013",
+		"summary": "Designed a rapid contextual user-centered Social Fitness Mobile/Web Aplication that simplifies fitness event planning.<p><b>Target:</b> People who go to the gym, people who are on a sport team, people who go to group recreational activities</p>",
+		"logo": "SocialFitness/cognection-logo-final.png",
+		"images":
+		[
+			{
+				"type":"Project Images",
+				"img":
+				[
+					{
+						"path":"SocialFitness/AffinityDiagram.png",
+						"text":"<h5>Contextual Inqury</h5><p>Conducted a preliminary survey and contextual interviews to gather user data.</p><p>Hosted interpretation sessions and created affnity diagram to generate user's work flow models.</p>"
+					},
+					{
+						"path":"SocialFitness/AffinityDiagram2.jpg",
+						"text":"<h5>Affinity Diagram</h5>"
+					},
+					{
+						"path":"SocialFitness/AffinityDiagram3.png",
+						"text":"<h5>Affinity Diagram</h5>"
+					},
+					{
+						"path":"SocialFitness/FollowersStoryboard.jpeg",
+						"text":"<h5>Flow Model - Followers</h5><p>After the data analysis, we identified two types of users:<ul><li>Initiators</li><li>Followers</li></ul><p>Followers are the ones who rarely initiate an activity but join and participate in activities that are initiated by others.</p>"
+					},
+					{
+						"path":"SocialFitness/InitiatorsStoryboard.jpeg",
+						"text":"<h5>Flow Model - Initiators</h5><p>Initiators are the ones who take the initiative to plan an activity.</p>"
+					},
+					{
+						"path":"SocialFitness/wireframePrototype.png",
+						"text":"<h5>Wireframe Prototype</h5><p>Generated by Axure</p>"
+					},
+					{
+						"path":"SocialFitness/wireframePrototype2.png",
+						"text":"<h5>Wireframe Prototype</h5><p>To learn more about this project in great details, here is our <a href=\"images/SocialFitness/Cognection-FinalPaper.pdf\" target=\"_blank\">Final Report Paper</a>.</p>"
+					}
+				]
+			},
+			{
+				"type":"icons",
+				"img":
+				{
+					"path":
+					[
+						"SocialFitness/cognection-logo-final.png"
+					],
+					"text":"<p>Design is inspired by our team name <b>Cognection</b> and our theme for socielity.</p>"
+				}
+			}
+		]
+	}
+]

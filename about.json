@@ -1,0 +1,72 @@
+{
+	"bio":{
+		"headline": "I'm Zhen & I'm cool",
+		"content": "I lived in <b>China</b> for 12 years, and lived here in the <b>States</b> for another 12 years. I lived on a street called <b>Kamehameha in Honolulu, Hawaii</b> for 4 months before I moved to California. I am fluent in <b>English, Cantonese, Mandarin, and one of the million Chinese dialects</b>. I rescued two mutts from the animal shelter, a <b>Maltese</b> Mix and a <b>SharPei</b> mix. I am an awesome <b>Ping Pong</b> player and <b>Tennis</b> player. I was formerly a <b>Natinally Registered Emergency Medical Technician</b>, and I hold an achievement in <b>Fire Protection Technology</b> with highest honor.",
+		"content2":"Peronality wise, I have a knack for making my environment <b>perfect</b>. Everything around me has to be <b>easily accessible and friendly</b> to me. From the general layout of the room to the specific route and length of a TV cable. Same goes for technical & graphic design, every <b>pixel</b> has to be perfect.",
+		"content3":"I recently obtained a B.S. degree in <b>Human Computer Interaction</b> from the Cognitive Science Department of the University of California, San Diego this past June. While I was there, I also took <b>computer science</b> courses to increase my background and understanding of computer engineering. One of the greatest strength about being a designer with some computer science background is that not only I can handle the <b>graphical aspects</b> of a project, I can understand and handle the <b>technical aspects</b> of the same project as well.",
+		"photo": "Zhen.jpg",
+		"pet":
+		[
+			{
+				"name":"Pookie",
+				"breed":"Maltese Mix",
+				"photo":"Pookie.jpg"
+			},
+			{
+				"name":"Penelope",
+				"breed":"SharPei Mix",
+				"photo":"Penelope.jpg"
+			}
+		]
+	},
+	"location":[
+		{
+			"city":"Canton",
+			"duration":"12 years"
+		},
+		{
+			"city":"Honolulu",
+			"duration":"4 months"
+		},
+		{
+			"city":"Los Angeles",
+			"duration":"6 years"
+		},
+		{
+			"city":"San Diego",
+			"duration":"6 years"
+		}
+	],
+	"education":[
+		{
+			"school":"Elementary School",
+			"name":"GuangHou Elementary School",
+			"location":"Canton, China"
+		},
+		{
+			"school":"Middle School",
+			"name":"Kawananakoa Middle School",
+			"location":"Honolulu, Hawaii"
+		},
+		{
+			"school":"Middle School",
+			"name":"Luther Burbank Middle School",
+			"location":"Los Angeles, California"
+		},
+		{
+			"school":"High School",
+			"name":"Benjamin Franklin High School",
+			"location":"Los Angeles, California"
+		},
+		{
+			"school":"University",
+			"name":"University of California, San Diego",
+			"location":"La Jolla, California"
+		},
+		{
+			"school":"Middle School",
+			"name":"Luther Burbank Middle School",
+			"location":"Los Angeles, California"
+		}
+	]
+}

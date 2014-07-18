@@ -1,7 +1,7 @@
 {
-  "name": "Boilerplate",
+  "name": "Portfolio",
   "version": "0.0.1",
-  "author": "Chu Shao",
+  "author": "Zhen Zheng",
   "scripts": {
     "start": "node app.js"
   },

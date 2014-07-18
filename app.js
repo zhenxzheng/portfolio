@@ -7,6 +7,8 @@ var app = express();
 
 //route files to load
 var index = require('./routes/index');
+var projects = require('./routes/projects');
+var about = require('./routes/about');
 
 //database setup - uncomment to set up your database
 //var mongoose = require('mongoose');
@@ -21,6 +23,10 @@ app.use(express.bodyParser());
 
 //routes
 app.get('/', index.view);
+app.get('/main', index.mainNav);
+app.get('/projects', projects.view);
+app.get('/projects/:id',projects.projectInfo)
+app.get('/about', about.view);
 //set environment ports and start application
 app.set('port', process.env.PORT || 3000);
 http.createServer(app).listen(app.get('port'), function(){
