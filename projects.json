@@ -104,11 +104,11 @@
 				[
 					
 					{
-						"path":"UCSDMap/Slide2.jpg",
+						"path":"UCSDMap/slide2.jpg",
 						"text":"<h5>UCSDMap</h5><p>Main Tools:</p><ul><li>Google Map API</li><li>Customized UCSD directory information<br>[in JSON format]</li><li>Bootstrap</li></ul><p>Main Functions:</p><ul><li>Search by building name, code & number</li><li>Auto-Complete suggestion</li><li>Global Position System</li></ul><p><a href=\"http://mapucsd2.herokuapp.com/\" target=\"_blank\">Live Demo</a><br><i>Note:<br>***YOU MUST ALLOW APPLICATION TO USE YOUR GPS ON YOUR BROWSWER.<br>Application was designed for mobiles, so layout format may look different on a desktop browswer (but it still works).</i></p>"
 					},
 					{
-						"path":"UCSDMap/Slide3.jpg",
+						"path":"UCSDMap/slide3.jpg",
 						"text":"<h5>Design Decisions:</h5><p>Search: because of the particularity of building names, abbreviations (or codes) & numbers, these information is not always readily available on our mobile map application. Therefore, searching by building name, code, & number is a need for our target users</p><p>Auto-complete: the auto-complete function is to prevent users from entering incorrect information and to reduce user's performance time. With the list of suggestion, it eases users memory and excessive typing.</p><p>GPS: it is always nice to know where you are and how far you are away from your destination.</p><p>Instruction: help instruction on main page will speed up performance of new users, making it less confusing.</p>"
 					}
 				]
@@ -143,19 +143,19 @@
 				"img":
 				[
 					{
-						"path":"ParknGo/PaperPrototypeMain.jpg",
+						"path":"ParknGo/PaperPrototypeMain.JPG",
 						"text":	"<h5>Paper Prototype [Web]</h5><p>Main page:</P><ul><li>List view: parking lot name, image, space type & availability.</li><li>Map view: marker pins where parking lot is.</li><li>Notification: announcements regarding special events that affect parking experience and parking lot status.</li></ul>"
 					},
 					{
-						"path":"ParknGo/PaperPrototypeMainRegister.jpg",
+						"path":"ParknGo/PaperPrototypeMainRegister.JPG",
 						"text":"<p>New user registration</p>"
 					},
 					{
-						"path":"ParknGo/PaperPrototypeMainSignIn.jpg",
+						"path":"ParknGo/PaperPrototypeMainSignIn.JPG",
 						"text":"<p>Existing user login</p>"
 					},
 					{
-						"path":"ParknGo/PaperPrototypeParkingLot.jpg",
+						"path":"ParknGo/PaperPrototypeParkingLot.JPG",
 						"text":"<p>Parking lot details:</p><ul><li>Graph regarding parking lot availability throughout the day</li><li>Current parking lot availability</li><li>Parking rates</li></ul>"
 					},
 					{
@@ -203,7 +203,7 @@
 						"text":"<h5>Storyboard 3</h5><p>Pay for your car whenever, wherever.</p>"
 					},
 					{
-						"path":"ParknGo/MobileDesignIdea.jpg",
+						"path":"ParknGo/MobileDesignIdea.JPG",
 						"text":"<h5>Expansion Idea 1</h5><p><ul><li>Associate a particular car with an unique QR code</li><li>Scan and store information under your account</li><li>Make payment via the application on a chosen car</li><li>Metermaid scans car QR code to check car parking permit status</li><li>Authority personels scans QR code to alert user via application if necessary</li></ul></p><h5>Expansion Idea 2</h5><p><ul><li>Number each parking space (Treat the parking lot as an array)</li><li>Park and specify which parking lot and parking space to pay for</li><li>The inputted parking lot location will pull up the rate of that parking lot</li><li>The inputted space number allows the system to generate a parking lot map to dynamically display the availability of each individual parking space.</li><li>Metermaids will use that map to check which car should not be in the parking lot/expired permit</li></ul></p><h5>Expansion Idea 3</h5><p>Same as idea 2 but instead of paying for a set rate, treat the space as a hotel room. Pay when you leave. This allows users to pay for their entire staying. No more overpay or underpay. <i>HOWEVER, this requires users to check out of the space to stop the timer/payment, which people may forget.</i></p>"
 					},
 					{
