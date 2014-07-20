@@ -13,6 +13,7 @@ function initializePage(){
 	$('#shortcutX').hide();
 	$('#shortcutLeft').hide();
 	$('#shortcutRight').hide();
+	console.log('test');
 }
 // Show the list of Projects
 function showProjects(e){
