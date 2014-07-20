@@ -13,7 +13,6 @@ function initializePage(){
 	$('#shortcutX').hide();
 	$('#shortcutLeft').hide();
 	$('#shortcutRight').hide();
-	console.log('test');
 }
 // Show the list of Projects
 function showProjects(e){
@@ -139,7 +138,6 @@ function projectDetail(e){
 	}
 	nextID = nextID.toString();
 	prevID = prevID.toString();
-console.log(nextID+' '+prevID);
 
 	$('#shortcutRight').removeClass().addClass(nextID);
 	$('#shortcutLeft').removeClass().addClass(prevID);
