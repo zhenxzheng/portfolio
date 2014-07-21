@@ -10,10 +10,15 @@ function initializePage(){
 	$('#shortcutX').click(showProjects);
 	$('#shortcutLeft').click(projectDetail);
 	$('#shortcutRight').click(projectDetail);
+	$('#shortcutHome').click(function(e){
+		window.location.href='/';
+	});
 	$('#shortcutX').hide();
 	$('#shortcutLeft').hide();
 	$('#shortcutRight').hide();
+	$('#contact').hide();
 }
+
 // Show the list of Projects
 function showProjects(e){
 	e.preventDefault();
@@ -21,7 +26,8 @@ function showProjects(e){
 	$('#shortcutX').hide();
 	$('#shortcutLeft').hide();
 	$('#shortcutRight').hide();
-	$('#Projects').css("background","#3498db");
+	$('#contact').hide();
+	$('#Projects').css("background","#01b169");
 	$('#Resume').css("background","transparent");
 	// $('#Resume').hover(function(){
 	// 	$('#Resume').css("background","#91d0b1");
@@ -49,9 +55,13 @@ function showProjects(e){
 				if (result.hasOwnProperty(key)){
 					var project = result[key];
 					projectHTML = projectHTML+
-					'<a href="#" class="'+project['id']+'"><div class="projectLogos">'+
-					'<img src="images/'+project['logo']+'">'+
-					'</div></a>'
+					'<section class="wrap-one-quarter" >'+
+						'<a href="#" class="'+project['id']+'">'+
+							'<figure class="projectLogos" id="logo'+project['id']+'">'+
+								'<img src="images/'+project['logo']+'">'+
+							'</figure>'+
+						'</a>'+
+					'</section>';
 				}
 			}
 			$('#content').html(projectHTML).fadeIn("slow");
@@ -67,8 +77,9 @@ function showAbout(e){
 	$('#shortcutX').hide();
 	$('#shortcutLeft').hide();
 	$('#shortcutRight').hide();
-	$('#About').css("background","#01b169");
-	 $('#Resume').css("background","transparent");
+	$('#contact').fadeIn(2000);
+	$('#About').css("background","#3498db");
+	$('#Resume').css("background","transparent");
 	// $('#Resume').hover(function(){
 	// 	$('#Resume').css("background","#91d0b1");
 	// 	}, function(){
@@ -92,25 +103,29 @@ function showAbout(e){
 			var location = bio['location'];
 			var education = bio['education'];
 			var pet = bio['pet'];
-			var bioHTML = '<section id="photo"><img src="images/'+bio['photo']+'"></section>'+
-						'<section id="bio">'+
-							'<h2>'+bio['headline']+'</h2>'+
-							'<p>'+bio['content']+'</p>'+
-							'<p>'+bio['content2']+'</p>'+
-							'<p>'+bio['content3']+'</p>'+
-						'</section>'+
-						'<div class="clean"></div><section id="social">';
+			var bioHTML = 	'<section id="photo" class="wrap-one-half">'+
+								'<img src="images/'+bio['photo']+'">'+
+							'</section>'+
+							'<section id="bio" class="wrap-one-half">'+
+								'<h2>'+bio['headline']+'</h2>'+
+								'<p>'+bio['content']+'</p>'+
+								'<p>'+bio['content2']+'</p>'+
+								'<p>'+bio['content3']+'</p>'+
+							'</section>'+
+							'<div class="clear"></div>'+
+							'<figure id="instagramPhoto" class="wrap-one-half">';
 			for (var key in pet){
 				if (pet.hasOwnProperty(key)){
 					var temp = pet[key];
 					bioHTML = bioHTML +
-							'<figure id="'+temp['name']+'"><img src="images/'+temp['photo']+'"></figure>';
+							'<img id="'+temp['name']+'" src="images/'+temp['photo']+'">';
 				}
 			}
-			bioHTML = bioHTML + '<div id="instagram">Follow me on <a href="http://instagram.com/zhenito" target="_blank">Instagram</a></div></section>'
+			bioHTML = bioHTML + '</figure><div id="instagramText" class="wrap-one-half">Follow me on <a href="http://instagram.com/zhenito" target="_blank">Instagram</a></div>'
 
-			var aboutHTML = bioHTML + '<div class="clean"></div>';
+			var aboutHTML = bioHTML + '<div class="clear"></div>';
 			$('#content').html(aboutHTML).fadeIn("fast");
+			$('#checkProjects').click(showProjects);
 		});
 	});
 }
@@ -145,10 +160,12 @@ function projectDetail(e){
 	$('#content').fadeOut("slow", function(){
 		// get Projects AJAX
 		$.get("/projects/"+projectID, function(result){
-			var detailHTML ='<header><h1>'+result['title']+'</h1>'+
-							'<p>'+result['summary']+'</p></header>'+
+			var detailHTML =
+							'<header><h1>'+result['title']+'</h1>'+
 							'<img src="images/'+result['logo']+'" id="projectLogo">'+
-							'<div class="clean"></div>';
+							'<div class="clear"></div>'+
+							'<p>'+result['summary']+'</p></header>'+
+							'<div class="clear"></div>';
 
 			var All = result['images'];
 
@@ -157,7 +174,7 @@ function projectDetail(e){
 				if (All.hasOwnProperty(x)){
 					var temp = All[x];
 					tempHTML= tempHTML+
-							'<div class="clean"></div>'+
+							'<div class="clear"></div>'+
 							'<h2>'+temp['type']+'</h2>';
 
 					if (temp['type'] == 'Project Images'){
@@ -172,7 +189,7 @@ function projectDetail(e){
 											'<aside>'+img['text']+'</aside>';
 							}
 						}
-						tempHTML=tempHTML+'<div class="clean"></div>';
+						tempHTML=tempHTML+'<div class="clear"></div>';
 					}
 					else
 					{
@@ -188,7 +205,7 @@ function projectDetail(e){
 						tempHTML=tempHTML+
 										'</figure><aside>'+
 										temp['text']+
-										'</aside><div class="clean"></div>';
+										'</aside><div class="clear"></div>';
 					}
 					
 				}
@@ -213,8 +230,21 @@ function projectDetail(e){
 			// };
 
 			// detailHTML = detailHTML + '<figure>'+imagesHTML+'</figure>'+'<figure>'+iconsHTML+'</figure>';
-			detailHTML= detailHTML + tempHTML + '</section>';
+			detailHTML= detailHTML + tempHTML + '<a href="#top"><div id="backToTop">Back to Top ^</div></a></section>';
 			$('#content').html(detailHTML).fadeIn();
+			$('#backToTop').click(function(e){
+				e.preventDefault();
+				$("html, body").animate({scrollTop:0},1000);
+			});
+
+			var block = $("#project figure, #project aside").fadeTo(0, 0);
+			$(window).scroll(function(d,h) {
+			    block.each(function(i) {
+			        var a = $(this).offset().top + $(this).height()/3;
+			        var b = $(window).scrollTop() + $(window).height();
+			        if (a < b) $(this).fadeTo(500,1);
+			    });
+			});
 		});
 	})
 }

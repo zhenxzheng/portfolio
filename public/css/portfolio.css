@@ -1,3 +1,49 @@
+/**********************************
+*	Global
+***********************************/
+/* Size and Position */
+html,body{
+	width:100%;
+	height:100%;
+	background: url(../images/bg_white.png);
+}
+body{
+	/*height:130px;*/
+}
+#content{
+	position:relative;
+	width:100%;
+	max-width:940px;
+	margin:auto;
+	display:block;
+}
+.wrap-one-third,.wrap-one-quarter{
+	min-height:100px;
+	display:block;
+	float:left;
+}
+.wrap-one-half{
+	width:50%;
+}
+.wrap-one-third{
+	width:33.3333333333%;
+}
+.wrap-one-quarter{
+	width:25%;
+	min-width:160px;
+}
+/*	Text	*/
+body{
+	font-family:"Lato", sans-serif;
+}
+i{
+	font-style:italic;
+}
+b{
+	font-weight:700;
+}
+
+/*	Links	*/
 a:link{
 	text-decoration:none;
 	color:inherit;
@@ -10,193 +56,62 @@ a:hover{
 	color:white;
 }
 
-.clean{
+/*	Style	*/
+.clear{
+	clear:both;
+	width:0;
+	height:0;
+}
+.clear-chunk{
 	clear:both;
 	width:0;
 	height:50px;
-
 }
-a:hover #Projects{
-	background: #3498db;
-}
-/*
-*	Size & Position
-*/
-
-/* Global */ 
-html,body{
-	width:100%;
-	height:100%;
-	background: url(../images/bg_white.png);
-}
-body{
-	height:130px;
-}
-
-/* Header & Navigation */
-#mainTitle, #nav h4{
-	text-align: center;
-}
-
+/**********************************
+*	Main Page
+***********************************/
+/* Size and Position */
 #mainTitle{
-	background: #84b4b1;
 	padding: 100px 0 120px 0;
+	z-index:1;
+	position:relative;
 }
 #nav{
 	margin: auto;
-	padding-top: 50px;
+	padding-top: 3%;
 	width:100%;
-	max-width:640px;
+	max-width:660px;
+	height:200px;
+
 	display:block;
 }
-
 #Resume,#Projects,#About{
-	width:22.916666666%;
-	min-width:150px;
-	padding:1%;
-	margin:0 3%;
+	margin:auto;
+	padding:3%;
+	min-width:100px;
+	max-width:150px;
+	min-height:100px;
 	display:block;
-	float:left;
 }
 #resumeSVG,#projectsSVG,#aboutSVG{
-	max-width:100%;
-	max-height:100%;
-}
-#content{
-	position:relative;
+	margin:10px auto;
 	width:100%;
-	max-width:940px;
-	margin:auto;
+	height:100px;
 	display:block;
 }
-
-#content header{
-	float:left;
-	width:64%;
+#resumeSVG{
+	max-width:80px;
+}
+#projectsSVG{
+	max-width:99px;
+}
+#aboutSVG{
+	max-width:57px;
 }
 
-#content h1,h2{
-	font-family: 'Open Sans',sans-serif;
-	text-transform:uppercase;
-	letter-spacing:1px;
-	color: #494949;
-}
-#content h1{
-	font-size: 36px;
-	font-weight:700;
-}
-#content h2{
-	font-size: 24px;
-	font-weight:700;
-}
-#content p{
-	padding:20px 0;
-	line-height: 20px;
-}
-#content aside{
-	width:33%;
-	min-width:310px;
-}
-#project figure,aside{
-	float:left;
-}
-aside a:link{
-	font-weight:700;
-}
-aside a:hover{
-	background:#494949;
-}
-aside h5{
-	font-size: 24px;
-	font-weight:700;
-}
-i{
-	font-style:italic;
-}
-b{
-	font-weight:700;
-}
-/* Projects */
-.projectLogos{
-	width:20%;
-	min-width:150px;
-	height:150px;
-	float:left;
-	padding:2% 1%;
-	margin: 0 1%;
-	margin-bottom:20px;
-	background:#005247;
-	overflow:hidden;
-}
-.projectLogos img{
-	width:100%;
-}
-
-#project aside{
-	margin: 20px 0 20px 3%;
-}
-#project figure{
-	width:64%;
-	min-width:320px;
-	margin: 20px 0;
-}
-#projectLogo{
-	max-width:150px;
-	float: right;
-}
-
-/* About */
-#photo,#bio,#instagram{
-	float:left;
-}
-#photo{
-	width:49%;
-	min-width:320px;
-}
-#bio{
-	width:49%;
-	min-width:320px;
-	margin:0 0 0 2%;
-}
-#photo img{
-	width:400px;
-	height:100%;
-}
-#bio header{
-	font-size:3em;
-	text-transform:uppercase;
-	font-weight: 200;
-	font-family: 'Montserrat',sans-serif;
-	display:block;
-}
-#social{
-	width:100%;
-}
-#Pookie, #Penelope{
-	min-width: 150px;
-	width:21.3%;
-	float:left;
-}
-#instagram a:link{
-	font-weight:700;
-}
-#instagram a:hover{
-	background:#494949;
-}
-#instagram{
-	min-width:320px;
-	padding-left:61px;
-	margin:auto 0 0 2%;
-	font-size:40px;
-	line-height:200px;
-
-}
-
-/*
-	Text
-*/
-body{
-	font-family:"Lato", sans-serif;
+/*	Text	*/
+#mainTitle, #nav h4{
+	text-align: center;
 }
 #mainTitle, #x{
 	color:white;
@@ -219,11 +134,12 @@ header h1 span{
 	font-weight: 900;
 	text-transform: uppercase;
 }
+/*	Links	*/
 
-
-/*
-*	SVG style
-*/
+/*	Style	*/
+#mainTitle{
+	background: #84b4b1;
+}
 
 /*RESUME SVG*/
 #Resume{
@@ -232,14 +148,14 @@ header h1 span{
 #resumeBG{
 	fill: #494949;
 }
-.resumeLine{
+.resumeLine,.resumeLine1{
 	fill: #bfbfbf;
 	height:7;
 }
 
 /*PROJECT SVG*/
 #Projects{
-	background: #3498db;
+	background: #01b169;
 }
 #hammer{
 	fill:#494949;
@@ -250,30 +166,253 @@ header h1 span{
 
 /*ABOUT SVG*/
 #About{
-	background: #01b169;
+	background: #3498db;
 }
 #avatar{
 	fill:#494949;
 }
+/**********************************
+*	Projects Page
+***********************************/
+/* Size and Position */
+.projectLogos{
+	min-width:160px;
+	max-width:200px;
+	min-height:160px;
+	max-height:160px;
+	margin:auto;
+	display:block;
+	background:#005247;
+	overflow:hidden;
+}
+.projectLogos img{ /* NOTE: this img is the same as #projectLogo*/
+	width:90%;
+	margin:auto;
+	padding:5%;
+	display:block;
+}
 
+/*	Text	*/
 
-#shortcutLeft,#shortcutRight,#shortcutX{
+/*	Links	*/
+
+/*	Style	*/
+#logo1{
+	background:#005247;
+}
+#logo2{
+	background:#2c3e50;
+}
+#logo3{
+	background:#7f8c8d;
+}
+#logo4{
+	background:#c0392b;
+}
+/**********************************
+*	Project Detail page
+***********************************/
+/* Size and Position */
+#content header{
+	width:100%;
+	min-width:320px;
+}
+#content header h1, #projectLogo{
+	float:left;
+	display:block;
+}
+#projectLogo{
+	max-height:36px;
+	padding:0 0 0 5px;
+}
+#content p{
+	padding:20px 0;
+}
+#content aside{
+	width:33%;
+	min-width:310px;
+}
+#project figure,aside{
+	float:left;
+}
+#project aside{
+	margin: 20px 0 20px 3%;
+}
+#project figure{
+	width:64%;
+	min-width:320px;
+	margin: 20px 0;
+}
+#shortcutLeft,#shortcutRight,
+#shortcutHome,#shortcutX{
 	width:100px;
 	height:100px;
 	position:fixed;
 	opacity:0.4;
 }
 #shortcutLeft{
-	left:5%;
-	bottom:50px;
+	left:1%;
+	bottom:1%;
 }
 #shortcutRight{
-
-	right:5%;
-	bottom:50px;
+	right:1%;
+	bottom:1%;
+}
+#shortcutHome{
+	top:1%;
+	left:1%;
 }
 #shortcutX{
-	top:50px;
-	right:5%;
-	z-index:-1;
+	top:1%;
+	right:1%;
+}
+#backToTop{
+	padding:3%;
+	width:200px;
+	display:block;
+	margin:30px auto;
+}
+
+/*	Text	*/
+#content h1,h2{
+	font-family: 'Open Sans',sans-serif;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color: #494949;
+}
+#content h1{
+	font-size: 36px;
+	font-weight:700;
+}
+#content h2{
+	font-size: 24px;
+	font-weight:700;
+}
+#content p{
+	line-height: 20px;
+}
+#backToTop{
+	text-align:center;
+}
+
+/*	Links	*/
+#project a:hover{
+	color:inherit;
+}
+#project aside p a:link{
+	font-weight:700;
+}
+#project aside p a:hover{
+	color:white;
+	background:#494949;
+}
+aside h5{
+	font-size: 24px;
+	font-weight:700;
+}
+
+/*	Style	*/
+#backToTop{
+	border-style:solid;
+	border-width:2px;
+	border-radius:15px;
+	opacity:0.5;
+}
+/**********************************
+*	About Page
+***********************************/
+/* Size and Position */
+#photo,#bio,#instagramText{
+	float:left;
+}
+#photo{
+	min-width:320px;
+}
+#bio{
+	min-width:320px;
+}
+#photo img{
+	width:90%;
+	min-width:320px;
+	display:inline;
+}
+#bio h2, #bio p, #bio ul{
+	margin:0 1%;
+}
+#bio ul{
+	margin-left:25px;
+}
+#instagramPhoto{
+	min-width:320px;
+	margin: 1% 0;
+	float:left;
+}
+#instagramText{
+	min-width:320px;
+	float:left;
+}
+#Pookie, #Penelope{
+	min-width: 160px;
+	width:45%;
+}
+#contact{
+	width:100%;
+	height:100px;
+	margin:4% 0;
+}
+#contact article{
+	max-width:960px;
+	height:100%;
+	margin:auto;
+}
+#contact article div{
+	min-width:320px;
+	display:block;
+	float:left;
+}
+#contact h2{
+	padding-top:40px;
+}
+/*	Text	*/
+#bio{
+	text-align:justify;
+}
+#bio header{
+	font-size:3em;
+	text-transform:uppercase;
+	font-weight: 200;
+	font-family: 'Montserrat',sans-serif;
+	display:block;
+}
+#bio h2 span{
+	font-size:0.4em;
+	font-weight:400;
+	letter-spacing:1.3px;
+}
+#instagramText{
+	font-size:190%;
+	line-height:200px;
+	text-align:center;
+}
+#contact h2{
+	text-align:center;
+	font-weight:700;
+	color:white;
+}
+/*	Links	*/
+#bio a:link{
+	font-weight:700;
+}
+#bio a:hover{
+	background:#494949;
+}
+#instagramText a:link{
+	font-weight:700;
+}
+#instagramText a:hover{
+	background:#494949;
+}
+/*	Style	*/
+#contact div{
+	background:#494949;
 }
