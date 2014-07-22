@@ -13,7 +13,7 @@
 				[
 					{
 						"path":"ActivityViz/FinalSlide.png",
-						"text":"<h5>Final Presentation</h5><p>If you wish to learn more about this project, here is our <a href=\"images/ActivityViz/ActivityViz-ProjectPaper.pdf\" target=\"_blank\">Final Report Paper</a>.</p><p><a href=\"http://activiz.herokuapp.com/\" target=\"_blank\">Live Demo</a><br><i>Note:*******<br>username: zhenxzheng<br>pw: 123456789<br>Or you can create your own account.<br>After login, skip the upload function by clicking \"Visulization\" on the nav bar to see the graph demo.</i></p>"
+						"text":"<h5>Final Presentation</h5><p>If you wish to learn more about this project, here is our <a href=\"images/ActivityViz/ActivityViz-ProjectPaper.pdf\" target=\"_blank\" id=\"ActivityVizFinalPaper\">Final Report Paper</a>.</p><p><a href=\"http://activiz.herokuapp.com/\" target=\"_blank\" id=\"ActivityVizLiveDemo\">Live Demo</a><br><i>Note:*******<br>username: zhenxzheng<br>pw: 123456789<br>Or you can create your own account.<br>After login, skip the upload function by clicking \"Visulization\" on the nav bar to see the graph demo.</i></p>"
 					},
 					{
 						"path":"ActivityViz/COGS121Slide3.png",
@@ -29,7 +29,7 @@
 					},
 					{
 						"path":"ActivityViz/Idea3.png",
-						"text":"<h5>Infrastructure Diagram</h5><p>Initially we were hoping to use YouTube API as part of the tools for movement visualization, however, due to confidentiality issue and limited data, we were forced to focus strictly on data visualization.</p><p>Then, we are planning to use D3.js library to create 2-dimensional graphics, and x3dom to generate a 3D environemnt for these graphics.</p><p>Here is our initial <a href=\"images/ActivityViz/ActivityViz-InitialTechnicalDesignDoc.pdf\" target=\"_blank\">Technical Design Document</a>.</p>"
+						"text":"<h5>Infrastructure Diagram</h5><p>Initially we were hoping to use YouTube API as part of the tools for movement visualization, however, due to confidentiality issue and limited data, we were forced to focus strictly on data visualization.</p><p>Then, we are planning to use D3.js library to create 2-dimensional graphics, and x3dom to generate a 3D environemnt for these graphics.</p><p>Here is our initial <a href=\"images/ActivityViz/ActivityViz-InitialTechnicalDesignDoc.pdf\" target=\"_blank\" id=\"ActivityVizTechnicalPaper\">Technical Design Document</a>.</p>"
 					},
 					{
 						"path":"ActivityViz/lowprototype.png",
@@ -105,7 +105,7 @@
 					
 					{
 						"path":"UCSDMap/slide2.jpg",
-						"text":"<h5>UCSDMap</h5><p>Main Tools:</p><ul><li>Google Map API</li><li>Customized UCSD directory information<br>[in JSON format]</li><li>Bootstrap</li></ul><p>Main Functions:</p><ul><li>Search by building name, code & number</li><li>Auto-Complete suggestion</li><li>Global Position System</li></ul><p><a href=\"http://mapucsd2.herokuapp.com/\" target=\"_blank\">Live Demo</a><br><i>Note:<br>***YOU MUST ALLOW APPLICATION TO USE YOUR GPS ON YOUR BROWSWER.<br>Application was designed for mobiles, so layout format may look different on a desktop browswer (but it still works).</i></p>"
+						"text":"<h5>UCSDMap</h5><p>Main Tools:</p><ul><li>Google Map API</li><li>Customized UCSD directory information<br>[in JSON format]</li><li>Bootstrap</li></ul><p>Main Functions:</p><ul><li>Search by building name, code & number</li><li>Auto-Complete suggestion</li><li>Global Position System</li></ul><p><a href=\"http://mapucsd2.herokuapp.com/\" target=\"_blank\" id=\"UCSDMapLiveDemo\">Live Demo</a><br><i>Note:<br>***YOU MUST ALLOW APPLICATION TO USE YOUR GPS ON YOUR BROWSWER.<br>Application was designed for mobiles, so layout format may look different on a desktop browswer (but it still works).</i></p>"
 					},
 					{
 						"path":"UCSDMap/slide3.jpg",
@@ -208,7 +208,7 @@
 					},
 					{
 						"path":"ParknGo/OtherIdeas.png",
-						"text":"<p>Cal State Fullerton has a successful parking space counting system.</p><p><a href=\"https://parking.fullerton.edu/parkinglotcounts/mobile.aspx\" target=\"_blank\">View Live</a></p>"
+						"text":"<p>Cal State Fullerton has a successful parking space counting system.</p><p><a href=\"https://parking.fullerton.edu/parkinglotcounts/mobile.aspx\" target=\"_blank\" id=\"CalStateFullerton\">View Live</a></p>"
 					}
 				]
 			},
@@ -272,7 +272,7 @@
 					},
 					{
 						"path":"SocialFitness/wireframePrototype2.png",
-						"text":"<h5>Wireframe Prototype</h5><p>To learn more about this project in great details, here is our <a href=\"images/SocialFitness/Cognection-FinalPaper.pdf\" target=\"_blank\">Final Report Paper</a>.</p>"
+						"text":"<h5>Wireframe Prototype</h5><p>To learn more about this project in great details, here is our <a href=\"images/SocialFitness/Cognection-FinalPaper.pdf\" target=\"_blank\" id=\"SocialFitnessFinalPaper\">Final Report Paper</a>.</p>"
 					}
 				]
 			},

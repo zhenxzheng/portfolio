@@ -5,6 +5,14 @@ $(document).ready(function(){
 	initializePage();
 })
 function initializePage(){
+	initializeClick();
+	initializeTracking();
+	$('#shortcutX').hide();
+	$('#shortcutLeft').hide();
+	$('#shortcutRight').hide();
+	$('#contact').hide();
+}
+function initializeClick(){
 	$('#Projects').click(showProjects);
 	$('#About').click(showAbout);
 	$('#shortcutX').click(showProjects);
@@ -13,10 +21,6 @@ function initializePage(){
 	$('#shortcutHome').click(function(e){
 		window.location.href='/';
 	});
-	$('#shortcutX').hide();
-	$('#shortcutLeft').hide();
-	$('#shortcutRight').hide();
-	$('#contact').hide();
 }
 
 // Show the list of Projects
@@ -65,6 +69,7 @@ function showProjects(e){
 				}
 			}
 			$('#content').html(projectHTML).fadeIn("slow");
+			trackProjects();
 			$('#content a').click(projectDetail);
 		});
 	});
@@ -125,6 +130,7 @@ function showAbout(e){
 
 			var aboutHTML = bioHTML + '<div class="clear"></div>';
 			$('#content').html(aboutHTML).fadeIn("fast");
+			trackAbout();
 			$('#checkProjects').click(showProjects);
 		});
 	});
@@ -136,6 +142,8 @@ function projectDetail(e){
 	$('#shortcutX').fadeIn(2000);
 	$('#shortcutLeft').fadeIn(2000);
 	$('#shortcutRight').fadeIn(2000);
+
+	// Track project ID number for arrows
 	var projectID = $(this).attr('class');
 	var intID = parseInt(projectID);
 	var nextID,prevID;
@@ -153,7 +161,7 @@ function projectDetail(e){
 	}
 	nextID = nextID.toString();
 	prevID = prevID.toString();
-
+	// update project ID on arrows
 	$('#shortcutRight').removeClass().addClass(nextID);
 	$('#shortcutLeft').removeClass().addClass(prevID);
 	
@@ -232,6 +240,10 @@ function projectDetail(e){
 			// detailHTML = detailHTML + '<figure>'+imagesHTML+'</figure>'+'<figure>'+iconsHTML+'</figure>';
 			detailHTML= detailHTML + tempHTML + '<a href="#top"><div id="backToTop">Back to Top ^</div></a></section>';
 			$('#content').html(detailHTML).fadeIn();
+
+			trackProjectDetails();
+
+			// Scroll fade in effect
 			$('#backToTop').click(function(e){
 				e.preventDefault();
 				$("html, body").animate({scrollTop:0},1000);
@@ -259,4 +271,81 @@ function transformPage(){
 	// $('#nav h4').hide();
 	$('#nav').animate({paddingTop:0});
 	// $('#nav').fadeOut();
+}
+
+function initializeTracking()
+{
+	$('#mainLogo').on('click',function(){
+		ga('send','event','button','click','Home-Name');
+	});
+	$('#Resume').on('click',function(){
+		ga('send','event','button','click','Resume-Buttons');
+	});
+	$('#Projects').on('click',function(){
+		ga('send','event','button','click','Projects-Buttons');
+	});
+	$('#About').on('click',function(){
+		ga('send','event','button','click','About-Buttons');
+	});
+	$('#shortcutLeft').on('click',function(){
+		ga('send','event','button','click','Left-Arrow');
+	});
+	$('#shortcutRight').on('click',function(){
+		ga('send','event','button','click','Right-Arrow');
+	});
+	$('#shortcutHome').on('click',function(){
+		ga('send','event','button','click','Home-Icon');
+	});
+	$('#shortcutX').on('click',function(){
+		ga('send','event','button','click','Close-Button');
+	});
+	trackProjects();
+}
+function trackProjects(){
+	$('.1').on('click',function(){
+		ga('send','event','button','click','Project1');
+	});
+	$('.2').on('click',function(){
+		ga('send','event','button','click','Project2');
+	});
+	$('.3').on('click',function(){
+		ga('send','event','button','click','Project3');
+	});
+	$('.4').on('click',function(){
+		ga('send','event','button','click','Project4');
+	});
+}
+function trackProjectDetails(){
+	$('#ActivityVizFinalPaper').on('click',function(){
+		ga('send','event','document','click','ActivityVizFinalPaper');
+	});
+	$('#ActivityVizLiveDemo').on('click',function(){
+		ga('send','event','demo','click','ActivityLiveDemo');
+	});
+	$('#ActivityVizTechnicalPaper').on('click',function(){
+		ga('send','event','document','click','ActivityVizTechnicalPaper');
+	});
+	$('#UCSDMapLiveDemo').on('click',function(){
+		ga('send','event','demo','click','UCSDMapLiveDemo');
+	});
+	$('#CalStateFullerton').on('click',function(){
+		ga('send','event','link','click','CalStateFullerton');
+	});
+	$('#SocialFitnessFinalPaper').on('click',function(){
+		ga('send','event','document','click','SocialFitnessFinalPaper');
+	});
+	$('#backToTop').on('click',function(){
+		ga('send','event','button','click','backToTop');
+	});
+}
+function trackAbout(){
+		$('#checkProjects').on('click',function(){
+		ga('send','event','button','click','Checkout-Project');
+	});	
+		$('#checkResume').on('click',function(){
+		ga('send','event','button','click','Checkout-Resume');
+	});	
+		$('#instagramText a').on('click',function(){
+		ga('send','event','button','click','Checkout-Instagram');
+	});
 }
